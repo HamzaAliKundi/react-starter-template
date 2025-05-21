@@ -31,7 +31,7 @@ const Signup = () => {
       const res = await signup(data);
       console.log(res);
       
-      if (res?.data?.status === 201) navigate("/verify-email");
+      if (res?.data?.status === 201) navigate("/verify-email-sent");
       // @ts-ignore
       else toast.error(res?.error?.data?.message ?? "Signup failed");
     } catch (error) {
