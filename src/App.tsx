@@ -21,12 +21,14 @@ function App() {
         <Route element={<PublicRoutes />}>
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/reset-password" element={<ResetPassword />} />
-          <Route path="/verify-email" element={<EmailVerification />} />
+
           <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/verification-success" element={<VerificationSuccess />} />
           <Route path="/password-reset-email-sent" element={<PasswordResetEmailSent />} />
           <Route path="/password-changed" element={<PasswordChangedSuccess />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
+
+          <Route path="/verify-email" element={<EmailVerification />} />
+          <Route path="/verification-success" element={<VerificationSuccess />} />
         </Route>
 
         <Route element={<ProtectedRoutes />}>
