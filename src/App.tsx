@@ -25,7 +25,7 @@ function App() {
           <Route path="/verify-email" element={<EmailVerification />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/verification-success" element={<VerificationSuccess />} />
-          <Route path="/email-sent" element={<PasswordResetEmailSent />} />
+          <Route path="/password-reset-email-sent" element={<PasswordResetEmailSent />} />
           <Route path="/password-changed" element={<PasswordChangedSuccess />} />
         </Route>
 

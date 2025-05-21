@@ -19,7 +19,7 @@ const ForgotPassword = () => {
       
       if (response?.data?.status === 200) {
         toast.success("Password reset link has been sent to your email");
-        navigate("/email-sent");
+        navigate("/password-reset-email-sent");
       } else {
         // @ts-ignore
         toast.error(response?.error?.data?.message || "Failed to send reset password email");

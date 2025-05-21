@@ -28,7 +28,7 @@ const Login = () => {
         localStorage.setItem("token", res?.data?.token);
         toast.success(res?.data?.message);
         navigate("/home");
-      } else toast.error(res?.error?.data?.error);
+      } else toast.error(res?.error?.data?.message ?? "Invalid credentials");
     } catch (error) {
       toast.error("An error occurred during login");
     } finally {
